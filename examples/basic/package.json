@@ -4,7 +4,9 @@
   "description": "Basic TestCafe API example",
   "main": "test.js",
   "scripts": {
-    "test": "testcafe all test.js"
+    "test": "testcafe chrome test.js",
+    "test:quarantine": "testcafe --dev --quarantine-mode chrome test.js",
+    "runner": "node runner.js"
   },
   "repository": {
     "type": "git",
